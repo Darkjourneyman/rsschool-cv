@@ -1,5 +1,138 @@
-.textOne {
-    width: 32px;
-    height: 32px;
-    color: red;
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page_header {
+    background: linear-gradient(135deg, #1a2a6c, #2a4d69);
+    color: white;
+    padding: 30px 0;
+
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.contactData {
+    padding-left: 30px;
+}
+
+.nameSurname {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.myPhone, .myMail, .myGit {
+    display: block;
+    color: #e0f7fa;
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.myPhone:hover, .myMail:hover, .myGit:hover {
+    color: #4fc3f7;
+    text-decoration: underline white;
+}
+
+.myGit {
+    background-color: #2c3e50;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.page_header .container {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.experience, .education {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.workExperience, .myEducation {
+    color: #2a4d69;
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4fc3f7;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 15px 0 5px 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.duties {
+    padding-left: 20px;
+}
+
+.myDuties {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .page_header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contactData {
+        padding: 20px 0 0 0;
+    }
+    
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .nameSurname {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .workExperience, .myEducation {
+        font-size: 1.5rem;
+    }
 }
